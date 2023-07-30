@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
+
 .imgText {
-    left:15%;
+    left: 15%;
     top: 15%;
 }
-.underLine{
+
+.underLine {
     border-bottom: 5px solid black;
 }
 
 /* HomePage */
-.text{
+.text {
     left: 10%;
     bottom: 50%;
     background-color: white;
@@ -21,7 +24,7 @@
     padding: 40px;
 }
 
-.textTwo{
+.textTwo {
     left: 10%;
     bottom: 5px;
     background-color: white;
@@ -30,17 +33,20 @@
     padding: 15px;
 }
 
-@media(max-width: 768px){
-    .text, .textTwo{
+@media(max-width: 768px) {
+
+    .text,
+    .textTwo {
         display: none;
     }
-    .photos .imgs img{
-        
-    }
-    .courses ul li{
+
+    .photos .imgs img {}
+
+    .courses ul li {
         padding: 2px !important;
     }
-    .learners .learn-card{
+
+    .learners .learn-card {
         display: flex;
         flex-direction: column;
         width: 100% !important;
@@ -49,24 +55,100 @@
     }
 }
 
-.btn1{
+.btn1 {
     background: gray !important;
     border-radius: 50%;
 }
-.test{
+
+.test {
     color: red !important;
 }
-.photos{
+
+.photos {
     background: #f7f9fa;
     color: gray;
 }
-.courses ul li:hover{
+
+.courses ul li:hover {
     color: black !important;
     cursor: pointer;
 }
-.learners{
+
+.learners {
     background: #f7f9fa;
 }
-.coursesColor{
+
+.coursesColor {
     color: #5624d0;
+}
+
+/* Default HomePage Nav */
+.dropdown:hover>.dropdown-menu {
+
+    display: block;
+
+}
+
+
+
+.dropdown>.dropdown-toggle:active {
+
+    /*Without this, clicking will make it sticky*/
+
+    pointer-events: none;
+
+}
+
+#searchInput {
+
+    border-top-right-radius: 50px;
+
+    border-bottom-right-radius: 50px;
+
+}
+
+#searchDiv {
+
+    border-top-left-radius: 50px;
+
+    border-bottom-left-radius: 50px;
+
+}
+
+#loginBtn:hover,
+#Btn:hover {
+
+    background-color: lightgray;
+
+    color: black;
+
+}
+
+.footer {
+
+    background-color: #1c1d1f;
+
+}
+
+/* Small HomaPage Nav */
+#responsiveNav {
+
+    display: none;
+
+}
+
+@media screen and (max-width: 994px) {
+
+    #mainNav {
+
+        display: none;
+
+    }
+
+    #responsiveNav {
+
+        display: block;
+
+    }
+
 }

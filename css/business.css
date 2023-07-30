@@ -97,6 +97,19 @@
         padding: 4px;
         font-size: 1rem;
     }
+
+
+}
+
+@media screen and (max-width:992px) {
+    .trust .trusted {
+        text-align: center;
+    }
+
+    .VW {
+        width: 70;
+        transform: translateY(-2rem);
+    }
 }
 
 @media screen and (max-width:1030px) {

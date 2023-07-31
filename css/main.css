@@ -40,7 +40,6 @@
         display: none;
     }
 
-    .photos .imgs img {}
 
     .courses ul li {
         padding: 2px !important;
@@ -126,7 +125,7 @@
 
 .footer {
 
-    background-color: #1c1d1f;
+    background-color: black;
 
 }
 

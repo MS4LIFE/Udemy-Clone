@@ -29,9 +29,9 @@
     }
 }
 
-.navbar-nav .flags {
-    max-width: fit-content !important;
-}
+/* .navbar-nav .flags {
+    width: 20px !important;
+} */
 
 @media screen and (max-width: 490px) {
     .nav-class {
@@ -125,6 +125,9 @@
     }
 }
 
+.get-in-touch {
+    background-color: black;
+}
 
 
 

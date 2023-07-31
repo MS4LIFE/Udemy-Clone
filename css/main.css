@@ -40,7 +40,6 @@
         display: none;
     }
 
-    .photos .imgs img {}
 
     .courses ul li {
         padding: 2px !important;
@@ -78,9 +77,165 @@
     background: #f7f9fa;
 }
 
-.coursesColor {
+.learners .learn-card img{
+    /* width: 10px !important; */
+    margin-bottom: 80px;
+}
+
+.categories .categoryImg:hover{
+    transform: scale(0.9);
+}
+
+/* .students #carouselExampleControls{
+    margin-top: -30px !important;
+} */
+
+.coursesColor, .javascript .js {
     color: #5624d0;
 }
+
+.featured, .customers{
+    background: #f7f9fa;
+}
+.featured a{
+    color: #5624d0;
+}
+.featured p{
+    color: gray;
+}
+.skills .icon{
+    color: #a435f0;
+}
+
+
+/* Esraa Work */
+
+.star{
+   color: #e59819;
+}
+.checkout{
+background: rgb(167, 83, 245) !important;
+color: white;
+border-radius: 0%;
+width: 100%;
+margin-top: -11px;
+font-weight: 500;
+
+} 
+
+.price{
+font-size: 30px;
+}  
+.card-header{
+    background-color: white;
+}  
+.total{
+    color: gray;
+    /* font-size: 5px; */
+}
+h5, .h5{
+    font-size: 1rem;
+}
+.container .promotion{
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+.close{
+    color: black;
+}
+.apply{
+    background: rgb(167, 83, 245);
+ color: white;
+ font-weight: 500;
+}
+.keeping{
+    color: gray;
+    font-weight: 500;
+}
+.isapplied{
+    color: gray;
+
+}
+.input1{
+    border-radius: 0%;
+}
+.might{
+    font-size: 25px;
+    font-weight: 600;
+}
+.edit1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.edit2{
+    font-size: 0.8rem;
+}
+.card img{
+    object-fit: cover;
+    /* width: 200px; */
+    height: 150px;
+}
+
+
+
+
+
+/* CSS */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 6rem;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 30%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 25%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.conttoop{
+  color:gray;
+  font-size: 0.7rem;
+
+}
+.bestseller{
+  color: rgb(11, 78, 25);
+  background: #ebe293;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.update{
+  font-size: small;
+color: rgb(53, 124, 53);
+font-weight: 500;
+}
+.strong:hover{
+color: rgb(104, 53, 153);
+}
+
+
+
+
+
+/* Esraa Work */
 
 /* Default HomePage Nav */
 .dropdown:hover>.dropdown-menu {
@@ -126,7 +281,7 @@
 
 .footer {
 
-    background-color: #1c1d1f;
+    background-color: black;
 
 }
 

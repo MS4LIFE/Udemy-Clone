@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.container{
-    transform: translate(-50%, -50%);
-    margin-top: 10%;
-}
 .container button{
     width: 400px;
     text-align: left;

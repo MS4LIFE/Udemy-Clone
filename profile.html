@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="container ">
+        <h3 class="fw-bold mt-5 pt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; color: ">Profile &
+            settings
+        </h3>
+    </div>
+
+    <!-- Tabs -->
+    <div class="container">
+        <div class="row">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bolder border-0" aria-current="page" href="#"
+                        onclick="showTabContent(0)">Udemy
+                        profile
+                    </a>
+                    <!-- LINE -->
+                    <div class="row">
+                        <hr class="container-fluid ms-4 text-dark ">
+                    </div>
+                    <!--Tab 1 Content -->
+                    <div class="col-12">
+                        <div class="form-group ms-3 mb-2">
+                            <label for="exampleInputFirstName" class="mb-1"><small class="fw-bold">First
+                                    Name</small></label>
+                            <input type="text" class="form-control border-dark rounded-0 me-5"
+                                id="exampleInputFirstName" placeholder="Name *">
+                        </div>
+                        <div class="form-group ms-3 mb-3">
+                            <label for="exampleInputSecondName " class=" mb-1"><small class="fw-bold">Last
+                                    Name</small></label>
+                            <input type="text" class="form-control border-dark rounded-0 me-5"
+                                id="exampleInputSecondName" placeholder="Name *">
+                        </div>
+                        <div class="form-group ms-3 mb-3">
+                            <label for="exampleInputHeadline" class="mb-1"><small
+                                    class="fw-bold">Heading</small></label>
+                            <input type="text" class="form-control border-dark rounded-0 me-5" id="exampleInputHeadline"
+                                placeholder="Instructor at Udemy                60">
+                        </div>
+                        <div class=" form-group ms-3 mb-3">
+                            <label for="exampleInputBiography" class="mb-1"><small
+                                    class="fw-bold">Biography</small></label>
+                            <input type="text" class="pb-4 form-control border-dark rounded-0 me-5"
+                                id="exampleInputBiography">
+                        </div>
+                        <!-- <div class="col-4 form-group ms-3 mb-3">
+                            <label class="mb-1">To help learners learn more about you,
+                                <br> your bio should reflect your
+                                Credibility,
+                                <br> Empathy, Passion, and Personality.
+                                <br> Your
+                                biography should have at least 50 words,
+                                <br> links and coupon codes are not
+                                permitted.</label>
+                        </div> -->
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showTabContent(1)">Link</a>
+                    <div id="tabContent1" class="form-group mb-3" style="display: none;">
+                        <input type="email" class="form-control" id="exampleInputAnotherEmail"
+                            aria-describedby="emailHelp" placeholder="Work email *">
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showTabContent(2)">Link</a>
+                    <div id="tabContent2" class="form-group mb-3" style="display: none;">
+                        <input type="email" class="form-control" id="exampleInputAnotherEmail"
+                            aria-describedby="emailHelp" placeholder="Work email *">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showTabContent(tabIndex) {
+            const allTabContents = document.querySelectorAll('.form-group.mb-3');
+            allTabContents.forEach((content, index) => {
+                if (index === tabIndex) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

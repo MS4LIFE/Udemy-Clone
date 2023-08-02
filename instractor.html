@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sidemenue{
+            position: absolute;
+            height: 100%;
+            width: 5%;
+            background-color: black;
+            margin:-1;
+        }
+        .myMenuItem{
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidemenue text-white">
+        <h5 class="myMenuItem">Courses</h5>
+        <h5 class="myMenuItem">Communications</h5>
+        <h5 class="myMenuItem">Preformance</h5>
+        <h5 class="myMenuItem">Tools</h5>
+        <h5 class="myMenuItem">Resources</h5>
+
+    </div>
+
+
+    <script>
+        $(".myMenuItem").each(function(i,e){
+                $(e).hide()})
+        $($(".sidemenue")[0]).on(
+            {
+            mouseover: function(){
+            $(".myMenuItem").each(function(i,e){
+                $(e).show(5)})
+                $(".sidemenue").animate({
+                "width":"10%"
+            })   
+            },
+            mouseleave:function(){
+            $(".myMenuItem").each(function(i,e){
+                $(e).hide()})
+                $(".sidemenue").animate({
+                "width":"5%"
+            })    
+            }
+        }
+        )
+    </script>
+    
+</body>
+</html>

@@ -2,160 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udemy</title>
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="main.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+  <link rel="icon" type="image/x-icon" href="./favIcon.png">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+    }
+
+    .imgText {
+      left: 15%;
+      top: 15%;
+    }
+
+    .underLine {
+      border-bottom: 5px solid black;
+    }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
+    .star {
+      color: #e59819;
+    }
 
-.imgText {
-    left: 15%;
-    top: 15%;
-}
+    .checkout {
+      background: rgb(167, 83, 245);
+      color: white;
+      border-radius: 0%;
+      width: 100%;
+      margin-top: -11px;
+      font-weight: 500;
 
-.underLine {
-    border-bottom: 5px solid black;
-}
+    }
 
+    .price {
+      font-size: 30px;
+    }
 
-.star{
-   color: #e59819;
-}
-.checkout{
-background: rgb(167, 83, 245);
-color: white;
-border-radius: 0%;
-width: 100%;
-margin-top: -11px;
-font-weight: 500;
+    .card-header {
+      background-color: white;
+    }
 
-} 
-.price{
-font-size: 30px;
-}  
-.card-header{
-    background-color: white;
-}  
-.total{
-    color: gray;
-    /* font-size: 5px; */
-}
-h5, .h5{
-    font-size: 1rem;
-}
-.container .promotion{
-    font-weight: 650;
-    font-size: 1.2rem;
-}
-.close{
-    color: black;
-}
-.apply{
-    background: rgb(167, 83, 245);
- color: white;
- font-weight: 500;
-}
-.keeping{
-    color: gray;
-    font-weight: 500;
-}
-.isapplied{
-    color: gray;
+    .total {
+      color: gray;
+      /* font-size: 5px; */
+    }
 
-}
-.input1{
-    border-radius: 0%;
-}
-.might{
-    font-size: 25px;
-    font-weight: 600;
-}
-.edit1{
-    font-size: 1rem;
-    font-weight: 700;
-}
-.edit2{
-    font-size: 0.8rem;
-}
-.card img{
-    object-fit: cover;
-    /* width: 200px; */
-    height: 150px;
-}
+    h5,
+    .h5 {
+      font-size: 1rem;
+    }
 
+    .container .promotion {
+      font-weight: 650;
+      font-size: 1.2rem;
+    }
+
+    .close {
+      color: black;
+    }
+
+    .apply {
+      background: rgb(167, 83, 245);
+      color: white;
+      font-weight: 500;
+    }
+
+    .keeping {
+      color: gray;
+      font-weight: 500;
+    }
+
+    .isapplied {
+      color: gray;
+
+    }
+
+    .input1 {
+      border-radius: 0%;
+    }
+
+    .might {
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .edit1 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .edit2 {
+      font-size: 0.8rem;
+    }
+
+    .card img {
+      object-fit: cover;
+      /* width: 200px; */
+      height: 150px;
+    }
 
 
 
 
-/* CSS */
-.tooltip-container {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  margin: 6rem;
-}
 
-.tooltip {
-  visibility: hidden;
-  width: 30%;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 10%;
-  left: 25%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 2s ease;
-}
-.tooltip-container:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
+    /* CSS */
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin: 6rem;
+    }
 
-.conttoop{
-  color:gray;
-  font-size: 0.7rem;
+    .tooltip {
+      visibility: hidden;
+      width: 30%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 10%;
+      left: 25%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
 
-}
-.bestseller{
-  color: rgb(11, 78, 25);
-  background: #ebe293;
-  height: 50px;
-  width: 100px;
-  text-align: center;
-  font-size: 0.9rem;
-}
-.update{
-  font-size: small;
-color: rgb(53, 124, 53);
-font-weight: 500;
-}
-.strong:hover{
-color: rgb(104, 53, 153);
-}
-    </style>
+    .tooltip-container:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .conttoop {
+      color: gray;
+      font-size: 0.7rem;
+
+    }
+
+    .bestseller {
+      color: rgb(11, 78, 25);
+      background: #ebe293;
+      height: 50px;
+      width: 100px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .update {
+      font-size: small;
+      color: rgb(53, 124, 53);
+      font-weight: 500;
+    }
+
+    .strong:hover {
+      color: rgb(104, 53, 153);
+    }
+  </style>
 </head>
 
 <body>
 
 
-   
-       <!-- <section class="h-100 gradient-custom">
+
+  <!-- <section class="h-100 gradient-custom">
         <section >
             <div class="container py-5">
                 <div class="row d-flex justify-content-center my-4">
@@ -1038,1362 +1057,1377 @@ color: rgb(104, 53, 153);
        
       </section> -->
 
-      
 
 
 
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 tooltip-container mx-2">
-        <div class="card  border-light rounded-0 ">
-            <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
-            <div class="card-body">
-                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                <p class="edit2">By Josenph Delgadillo</p>
-               <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                <i class="fa-solid star  fa-star"></i>
-                <i class="fa-solid star  fa-star"></i>
-                <i class="fa-solid star  fa-star"></i>
-                <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                <div class="card-text"><small class="small">EGP</small><strong
-                        class="card-text  d-inline">4884.00</strong>
-                </div>
-            </div>
-           
-            </div>
-           
-        <!-- </div> -->
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 tooltip-container mx-2">
+    <div class="card  border-light rounded-0 ">
+      <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
+      <div class="card-body">
+        <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+        <p class="edit2">By Josenph Delgadillo</p>
+        <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+        <div class="card-text"><small class="small">EGP</small><strong class="card-text  d-inline">4884.00</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- </div> -->
 
 
-      
-  <div class="tooltip w-50 bg-light text-dark">
-    <div class="container text-start">
+
+    <div class="tooltip w-50 bg-light text-dark">
+      <div class="container text-start">
         <div class="strong">
           <strong>The Ultimate React Course 2023: React, Redux & More</strong>
         </div>
 
-  <span class="update">
-    <span class="bestseller">Best Seller</span>
+        <span class="update">
+          <span class="bestseller">Best Seller</span>
 
-    Updated July 2023
-  </span>
+          Updated July 2023
+        </span>
 
         <div>
           <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
         </div>
 
-        
-      <div>
-       <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-      </div>
 
-      <ul>
+        <div>
+          <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced
+            patterns</p>
+        </div>
 
-        <li>
-        
+        <ul>
+
+          <li>
+
             <i class="fa-solid fa-check pe-2"></i>
             Master Machine Learning on Python & R
-        </li>
-
-        <li>
-        
-            <i class="fa-solid fa-check pe-2"></i>
-
-              Have a great intuition of many Machine Learning models
-           
-        </li>
-
-        <li>
-          
-            <i class="fa-solid fa-check pe-2"></i>
-              Make accurate predictions
-          
-
-        </li>
-
-      </ul>
-      
-
-
-    <div>
-    <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-       Add To Cart
-    </button>
-  </div>
-  </div>
-
-</div>
-    </div>
-
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-      
-          <div class="carousel-item   active">
-            <div class="d-flex justify-content-center">
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                <div class="card  border-light rounded-0 ">
-                    <img src="./imgs/python2.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                    <div class="card-body">
-                        <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                        <p class="edit2">By Josenph Delgadillo</p>
-                       <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                        <div class="card-text"><small class="small">EGP</small><strong
-                                class="card-text  d-inline">4884.00</strong>
-                        </div>
-                    </div>
-                   
-                    </div>
-                    <div class="tooltip w-100 bg-light text-dark">
-                      <div class="container text-start">
-                          <div class="strong">
-                            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                          </div>
-                
-                    <span class="update">
-                      <span class="bestseller">Best Seller</span>
-                
-                      Updated July 2023
-                    </span>
-                
-                          <div>
-                            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                          </div>
-                
-                          
-                        <div>
-                         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                        </div>
-                
-                        <ul>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                              Master Machine Learning on Python & R
-                          </li>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                  
-                                Have a great intuition of many Machine Learning models
-                             
-                          </li>
-                
-                          <li>
-                            
-                              <i class="fa-solid fa-check pe-2"></i>
-                                Make accurate predictions
-                            
-                
-                          </li>
-                
-                        </ul>
-                        
-                
-                
-                      <div>
-                      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                         Add To Cart
-                      </button>
-                    </div>
-                    </div>
-                
-                  </div>
-                </div>
-      
-            <div class=" col-xs-12 col-sm-12 col-md-6  col-lg-2 tooltip-container mx-2">
-                    <div class="card  border-light rounded-0 ">
-                        <img src="./imgs/html.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                        <div class="card-body">
-                            <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                            <p class="edit2">By Josenph Delgadillo</p>
-                           <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                            <div class="card-text"><small class="small">EGP</small><strong
-                                    class="card-text  d-inline">4884.00</strong>
-                            </div>
-                        </div>
-                       
-                        </div>
-                        <div class="tooltip w-100 bg-light text-dark">
-                          <div class="container text-start">
-                              <div class="strong">
-                                <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                              </div>
-                    
-                        <span class="update">
-                          <span class="bestseller">Best Seller</span>
-                    
-                          Updated July 2023
-                        </span>
-                    
-                              <div>
-                                <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                              </div>
-                    
-                              
-                            <div>
-                             <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                            </div>
-                    
-                            <ul>
-                    
-                              <li>
-                              
-                                  <i class="fa-solid fa-check pe-2"></i>
-                                  Master Machine Learning on Python & R
-                              </li>
-                    
-                              <li>
-                              
-                                  <i class="fa-solid fa-check pe-2"></i>
-                      
-                                    Have a great intuition of many Machine Learning models
-                                 
-                              </li>
-                    
-                              <li>
-                                
-                                  <i class="fa-solid fa-check pe-2"></i>
-                                    Make accurate predictions
-                                
-                    
-                              </li>
-                    
-                            </ul>
-                            
-                    
-                    
-                          <div>
-                          <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                             Add To Cart
-                          </button>
-                        </div>
-                        </div>
-                    
-                      </div> 
-                 </div>
-      
-      
-            <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-2  tooltip-container mx-2">
-                        <div class="card  border-light rounded-0 ">
-                            <img src="./imgs/c.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                            <div class="card-body">
-                                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                <p class="edit2">By Josenph Delgadillo</p>
-                               <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                <div class="card-text"><small class="small">EGP</small><strong
-                                        class="card-text  d-inline">4884.00</strong>
-                                </div>
-                            </div>
-                           
-                            </div>
-                            <div class="tooltip w-100 bg-light text-dark">
-                              <div class="container text-start">
-                                  <div class="strong">
-                                    <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                                  </div>
-                        
-                            <span class="update">
-                              <span class="bestseller">Best Seller</span>
-                        
-                              Updated July 2023
-                            </span>
-                        
-                                  <div>
-                                    <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                                  </div>
-                        
-                                  
-                                <div>
-                                 <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                                </div>
-                        
-                                <ul>
-                        
-                                  <li>
-                                  
-                                      <i class="fa-solid fa-check pe-2"></i>
-                                      Master Machine Learning on Python & R
-                                  </li>
-                        
-                                  <li>
-                                  
-                                      <i class="fa-solid fa-check pe-2"></i>
-                          
-                                        Have a great intuition of many Machine Learning models
-                                     
-                                  </li>
-                        
-                                  <li>
-                                    
-                                      <i class="fa-solid fa-check pe-2"></i>
-                                        Make accurate predictions
-                                    
-                        
-                                  </li>
-                        
-                                </ul>
-                                
-                        
-                        
-                              <div>
-                              <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                                 Add To Cart
-                              </button>
-                            </div>
-                            </div>
-                        
-                          </div>    
-                 </div>
-
-            <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                            <div class="card  border-light rounded-0 ">
-                                <img src="./imgs/animation.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                                <div class="card-body">
-                                    <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                    <p class="edit2">By Josenph Delgadillo</p>
-                                   <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                    <div class="card-text"><small class="small">EGP</small><strong
-                                            class="card-text  d-inline">4884.00</strong>
-                                    </div>
-                                </div>
-                               
-                                </div>
-                                <div class="tooltip w-100 bg-light text-dark">
-                                  <div class="container text-start">
-                                      <div class="strong">
-                                        <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                                      </div>
-                            
-                                <span class="update">
-                                  <span class="bestseller">Best Seller</span>
-                            
-                                  Updated July 2023
-                                </span>
-                            
-                                      <div>
-                                        <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                                      </div>
-                            
-                                      
-                                    <div>
-                                     <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                                    </div>
-                            
-                                    <ul>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                          Master Machine Learning on Python & R
-                                      </li>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                              
-                                            Have a great intuition of many Machine Learning models
-                                         
-                                      </li>
-                            
-                                      <li>
-                                        
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                            Make accurate predictions
-                                        
-                            
-                                      </li>
-                            
-                                    </ul>
-                                    
-                            
-                            
-                                  <div>
-                                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                                     Add To Cart
-                                  </button>
-                                </div>
-                                </div>
-                            
-                              </div>       
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                  <div class="card  border-light rounded-0 ">
-                      <img src="./imgs/os.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                      <div class="card-body">
-                          <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                          <p class="edit2">By Josenph Delgadillo</p>
-                         <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                          <div class="card-text"><small class="small">EGP</small><strong
-                                  class="card-text  d-inline">4884.00</strong>
-                          </div>
-                      </div>
-                     
-                      </div>
-                      <div class="tooltip w-100 bg-light text-dark">
-                        <div class="container text-start">
-                            <div class="strong">
-                              <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                            </div>
-                  
-                      <span class="update">
-                        <span class="bestseller">Best Seller</span>
-                  
-                        Updated July 2023
-                      </span>
-                  
-                            <div>
-                              <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                            </div>
-                  
-                            
-                          <div>
-                           <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                          </div>
-                  
-                          <ul>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                                Master Machine Learning on Python & R
-                            </li>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                    
-                                  Have a great intuition of many Machine Learning models
-                               
-                            </li>
-                  
-                            <li>
-                              
-                                <i class="fa-solid fa-check pe-2"></i>
-                                  Make accurate predictions
-                              
-                  
-                            </li>
-                  
-                          </ul>
-                          
-                  
-                  
-                        <div>
-                        <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                           Add To Cart
-                        </button>
-                      </div>
-                      </div>
-                  
-                    </div>       
-                </div>
-            </div>
-            
-           
-          </div>
-      
-         
-          <div class="carousel-item ">
-            <div class="d-flex justify-content-center">
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                <div class="card  border-light rounded-0 ">
-                    <img src="./imgs/1.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                    <div class="card-body">
-                        <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                        <p class="edit2">By Josenph Delgadillo</p>
-                       <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                        <div class="card-text"><small class="small">EGP</small><strong
-                                class="card-text  d-inline">4884.00</strong>
-                        </div>
-                    </div>
-                   
-                    </div>
-                    <div class="tooltip w-100 bg-light text-dark">
-                      <div class="container text-start">
-                          <div class="strong">
-                            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                          </div>
-                
-                    <span class="update">
-                      <span class="bestseller">Best Seller</span>
-                
-                      Updated July 2023
-                    </span>
-                
-                          <div>
-                            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                          </div>
-                
-                          
-                        <div>
-                         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                        </div>
-                
-                        <ul>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                              Master Machine Learning on Python & R
-                          </li>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                  
-                                Have a great intuition of many Machine Learning models
-                             
-                          </li>
-                
-                          <li>
-                            
-                              <i class="fa-solid fa-check pe-2"></i>
-                                Make accurate predictions
-                            
-                
-                          </li>
-                
-                        </ul>
-                        
-                
-                
-                      <div>
-                      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                         Add To Cart
-                      </button>
-                    </div>
-                    </div>
-                
-                  </div>
-                </div>
-      
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                    <div class="card  border-light rounded-0 ">
-                        <img src="./imgs/python.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                        <div class="card-body">
-                            <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                            <p class="edit2">By Josenph Delgadillo</p>
-                           <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                            <div class="card-text"><small class="small">EGP</small><strong
-                                    class="card-text  d-inline">4884.00</strong>
-                            </div>
-                        </div>
-                       
-                        </div>
-                        <div class="tooltip w-100 bg-light text-dark">
-      <div class="container text-start">
-          <div class="strong">
-            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-          </div>
-
-    <span class="update">
-      <span class="bestseller">Best Seller</span>
-
-      Updated July 2023
-    </span>
-
-          <div>
-            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-          </div>
-
-          
-        <div>
-         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-        </div>
-
-        <ul>
-
-          <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-              Master Machine Learning on Python & R
           </li>
 
           <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-  
-                Have a great intuition of many Machine Learning models
-             
+
+            <i class="fa-solid fa-check pe-2"></i>
+
+            Have a great intuition of many Machine Learning models
+
           </li>
 
           <li>
-            
-              <i class="fa-solid fa-check pe-2"></i>
-                Make accurate predictions
-            
+
+            <i class="fa-solid fa-check pe-2"></i>
+            Make accurate predictions
+
 
           </li>
 
         </ul>
-        
 
 
-      <div>
-      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-         Add To Cart
-      </button>
-    </div>
-    </div>
 
-                          </div>
-                 </div>
-      
-      
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                        <div class="card  border-light rounded-0 ">
-                            <img src="./imgs/mongo.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                            <div class="card-body">
-                                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                <p class="edit2">By Josenph Delgadillo</p>
-                               <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                <div class="card-text"><small class="small">EGP</small><strong
-                                        class="card-text  d-inline">4884.00</strong>
-                                </div>
-                            </div>
-                           
-                            </div>
-                        <div class="tooltip w-100 bg-light text-dark">
-      <div class="container text-start">
-          <div class="strong">
-            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-          </div>
-
-    <span class="update">
-      <span class="bestseller">Best Seller</span>
-
-      Updated July 2023
-    </span>
-
-          <div>
-            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-          </div>
-
-          
         <div>
-         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
+          <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+            Add To Cart
+          </button>
         </div>
-
-        <ul>
-
-          <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-              Master Machine Learning on Python & R
-          </li>
-
-          <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-  
-                Have a great intuition of many Machine Learning models
-             
-          </li>
-
-          <li>
-            
-              <i class="fa-solid fa-check pe-2"></i>
-                Make accurate predictions
-            
-
-          </li>
-
-        </ul>
-        
-
-
-      <div>
-      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-         Add To Cart
-      </button>
-    </div>
-    </div>
-
-                       </div>    
-                 </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                            <div class="card  border-light rounded-0 ">
-                                <img src="./imgs/c.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                                <div class="card-body">
-                                    <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                    <p class="edit2">By Josenph Delgadillo</p>
-                                   <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                    <div class="card-text"><small class="small">EGP</small><strong
-                                            class="card-text  d-inline">4884.00</strong>
-                                    </div>
-                                </div>
-                               
-                                </div>
-                                <div class="tooltip w-100 bg-light text-dark">
-                                  <div class="container text-start">
-                                      <div class="strong">
-                                        <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                                      </div>
-                            
-                                <span class="update">
-                                  <span class="bestseller">Best Seller</span>
-                            
-                                  Updated July 2023
-                                </span>
-                            
-                                      <div>
-                                        <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                                      </div>
-                            
-                                      
-                                    <div>
-                                     <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                                    </div>
-                            
-                                    <ul>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                          Master Machine Learning on Python & R
-                                      </li>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                              
-                                            Have a great intuition of many Machine Learning models
-                                         
-                                      </li>
-                            
-                                      <li>
-                                        
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                            Make accurate predictions
-                                        
-                            
-                                      </li>
-                            
-                                    </ul>
-                                    
-                            
-                            
-                                  <div>
-                                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                                     Add To Cart
-                                  </button>
-                                </div>
-                                </div>
-                            
-                              </div>  
-                </div>
-              
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                  <div class="card  border-light rounded-0 ">
-                      <img src="./imgs/excell.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                      <div class="card-body">
-                          <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                          <p class="edit2">By Josenph Delgadillo</p>
-                         <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                          <div class="card-text"><small class="small">EGP</small><strong
-                                  class="card-text  d-inline">4884.00</strong>
-                          </div>
-                      </div>
-                     
-                      </div>
-                      <div class="tooltip w-100 bg-light text-dark">
-                        <div class="container text-start">
-                            <div class="strong">
-                              <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                            </div>
-                  
-                      <span class="update">
-                        <span class="bestseller">Best Seller</span>
-                  
-                        Updated July 2023
-                      </span>
-                  
-                            <div>
-                              <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                            </div>
-                  
-                            
-                          <div>
-                           <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                          </div>
-                  
-                          <ul>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                                Master Machine Learning on Python & R
-                            </li>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                    
-                                  Have a great intuition of many Machine Learning models
-                               
-                            </li>
-                  
-                            <li>
-                              
-                                <i class="fa-solid fa-check pe-2"></i>
-                                  Make accurate predictions
-                              
-                  
-                            </li>
-                  
-                          </ul>
-                          
-                  
-                  
-                        <div>
-                        <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                           Add To Cart
-                        </button>
-                      </div>
-                      </div>
-                  
-                    </div> 
-                 </div>
-            </div>
-            
-      
-          </div>
-      
-      
-      
-          <div class="carousel-item ">
-            <div class="d-flex justify-content-center">
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                <div class="card  border-light rounded-0 ">
-                    <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                    <div class="card-body">
-                        <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                        <p class="edit2">By Josenph Delgadillo</p>
-                       <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-solid star  fa-star"></i>
-                        <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                        <div class="card-text"><small class="small">EGP</small><strong
-                                class="card-text  d-inline">4884.00</strong>
-                        </div>
-                    </div>
-                   
-                    </div>
-                    <div class="tooltip w-100 bg-light text-dark">
-                      <div class="container text-start">
-                          <div class="strong">
-                            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                          </div>
-                
-                    <span class="update">
-                      <span class="bestseller">Best Seller</span>
-                
-                      Updated July 2023
-                    </span>
-                
-                          <div>
-                            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                          </div>
-                
-                          
-                        <div>
-                         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                        </div>
-                
-                        <ul>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                              Master Machine Learning on Python & R
-                          </li>
-                
-                          <li>
-                          
-                              <i class="fa-solid fa-check pe-2"></i>
-                  
-                                Have a great intuition of many Machine Learning models
-                             
-                          </li>
-                
-                          <li>
-                            
-                              <i class="fa-solid fa-check pe-2"></i>
-                                Make accurate predictions
-                            
-                
-                          </li>
-                
-                        </ul>
-                        
-                
-                
-                      <div>
-                      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                         Add To Cart
-                      </button>
-                    </div>
-                    </div>
-                
-                  </div>
-                </div>
-      
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                    <div class="card  border-light rounded-0 ">
-                        <img src="./imgs/css.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                        <div class="card-body">
-                            <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                            <p class="edit2">By Josenph Delgadillo</p>
-                           <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-solid star  fa-star"></i>
-                            <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                            <div class="card-text"><small class="small">EGP</small><strong
-                                    class="card-text  d-inline">4884.00</strong>
-                            </div>
-                        </div>
-                       
-                        </div>
-                        <div class="tooltip w-100 bg-light text-dark">
-                          <div class="container text-start">
-                              <div class="strong">
-                                <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                              </div>
-                    
-                        <span class="update">
-                          <span class="bestseller">Best Seller</span>
-                    
-                          Updated July 2023
-                        </span>
-                    
-                              <div>
-                                <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                              </div>
-                    
-                              
-                            <div>
-                             <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                            </div>
-                    
-                            <ul>
-                    
-                              <li>
-                              
-                                  <i class="fa-solid fa-check pe-2"></i>
-                                  Master Machine Learning on Python & R
-                              </li>
-                    
-                              <li>
-                              
-                                  <i class="fa-solid fa-check pe-2"></i>
-                      
-                                    Have a great intuition of many Machine Learning models
-                                 
-                              </li>
-                    
-                              <li>
-                                
-                                  <i class="fa-solid fa-check pe-2"></i>
-                                    Make accurate predictions
-                                
-                    
-                              </li>
-                    
-                            </ul>
-                            
-                    
-                    
-                          <div>
-                          <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                             Add To Cart
-                          </button>
-                        </div>
-                        </div>
-                    
-                      </div> 
-                 </div>
-      
-      
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                        <div class="card  border-light rounded-0 ">
-                            <img src="./imgs/sql.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                            <div class="card-body">
-                                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                <p class="edit2">By Josenph Delgadillo</p>
-                               <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-solid star  fa-star"></i>
-                                <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                <div class="card-text"><small class="small">EGP</small><strong
-                                        class="card-text  d-inline">4884.00</strong>
-                                </div>
-                            </div>
-                           
-                            </div>
-                            <div class="tooltip w-100 bg-light text-dark">
-                              <div class="container text-start">
-                                  <div class="strong">
-                                    <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                                  </div>
-                        
-                            <span class="update">
-                              <span class="bestseller">Best Seller</span>
-                        
-                              Updated July 2023
-                            </span>
-                        
-                                  <div>
-                                    <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                                  </div>
-                        
-                                  
-                                <div>
-                                 <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                                </div>
-                        
-                                <ul>
-                        
-                                  <li>
-                                  
-                                      <i class="fa-solid fa-check pe-2"></i>
-                                      Master Machine Learning on Python & R
-                                  </li>
-                        
-                                  <li>
-                                  
-                                      <i class="fa-solid fa-check pe-2"></i>
-                          
-                                        Have a great intuition of many Machine Learning models
-                                     
-                                  </li>
-                        
-                                  <li>
-                                    
-                                      <i class="fa-solid fa-check pe-2"></i>
-                                        Make accurate predictions
-                                    
-                        
-                                  </li>
-                        
-                                </ul>
-                                
-                        
-                        
-                              <div>
-                              <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                                 Add To Cart
-                              </button>
-                            </div>
-                            </div>
-                        
-                          </div>  
-                 </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
-                            <div class="card  border-light rounded-0 ">
-                                <img src="./imgs/c++.png" class="card-img-top img-fluid rounded-0 " alt="...">
-                                <div class="card-body">
-                                    <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                                    <p class="edit2">By Josenph Delgadillo</p>
-                                   <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-solid star  fa-star"></i>
-                                    <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                                    <div class="card-text"><small class="small">EGP</small><strong
-                                            class="card-text  d-inline">4884.00</strong>
-                                    </div>
-                                </div>
-                               
-                                </div>
-                                <div class="tooltip w-100 bg-light text-dark">
-                                  <div class="container text-start">
-                                      <div class="strong">
-                                        <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                                      </div>
-                            
-                                <span class="update">
-                                  <span class="bestseller">Best Seller</span>
-                            
-                                  Updated July 2023
-                                </span>
-                            
-                                      <div>
-                                        <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                                      </div>
-                            
-                                      
-                                    <div>
-                                     <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                                    </div>
-                            
-                                    <ul>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                          Master Machine Learning on Python & R
-                                      </li>
-                            
-                                      <li>
-                                      
-                                          <i class="fa-solid fa-check pe-2"></i>
-                              
-                                            Have a great intuition of many Machine Learning models
-                                         
-                                      </li>
-                            
-                                      <li>
-                                        
-                                          <i class="fa-solid fa-check pe-2"></i>
-                                            Make accurate predictions
-                                        
-                            
-                                      </li>
-                            
-                                    </ul>
-                                    
-                            
-                            
-                                  <div>
-                                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                                     Add To Cart
-                                  </button>
-                                </div>
-                                </div>
-                            
-                              </div>  
-                </div>
-              
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2  tooltip-container mx-2">
-                  <div class="card  border-light rounded-0 ">
-                      <img src="./imgs/network.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
-                      <div class="card-body">
-                          <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                          <p class="edit2">By Josenph Delgadillo</p>
-                         <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-solid star  fa-star"></i>
-                          <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                          <div class="card-text"><small class="small">EGP</small><strong
-                                  class="card-text  d-inline">4884.00</strong>
-                          </div>
-                      </div>
-                     
-                      </div>
-                      <div class="tooltip w-100 bg-light text-dark">
-                        <div class="container text-start">
-                            <div class="strong">
-                              <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-                            </div>
-                  
-                      <span class="update">
-                        <span class="bestseller">Best Seller</span>
-                  
-                        Updated July 2023
-                      </span>
-                  
-                            <div>
-                              <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-                            </div>
-                  
-                            
-                          <div>
-                           <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
-                          </div>
-                  
-                          <ul>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                                Master Machine Learning on Python & R
-                            </li>
-                  
-                            <li>
-                            
-                                <i class="fa-solid fa-check pe-2"></i>
-                    
-                                  Have a great intuition of many Machine Learning models
-                               
-                            </li>
-                  
-                            <li>
-                              
-                                <i class="fa-solid fa-check pe-2"></i>
-                                  Make accurate predictions
-                              
-                  
-                            </li>
-                  
-                          </ul>
-                          
-                  
-                  
-                        <div>
-                        <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-                           Add To Cart
-                        </button>
-                      </div>
-                      </div>
-                  
-                    </div> 
-              </div>
-            </div>
-            
-      
-          </div>
-      
-      
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon  bg-dark rounded-circle" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
+    </div>
+  </div>
 
 
-     
-      
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 tooltip-container mx-2">
-          <div class="card  border-light rounded-0 ">
-              <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item   active">
+        <div class="d-flex justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/python2.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
               <div class="card-body">
-                  <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
-                  <p class="edit2">By Josenph Delgadillo</p>
-                 <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
                   <i class="fa-solid star  fa-star"></i>
                   <i class="fa-solid star  fa-star"></i>
                   <i class="fa-solid star  fa-star"></i>
                   <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
-                  <div class="card-text"><small class="small">EGP</small><strong
-                          class="card-text  d-inline">4884.00</strong>
-                  </div>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
               </div>
-             
-              </div>
-             
-          <!-- </div> -->
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
 
 
-        
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-6  col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/html.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-2  tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/c.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/animation.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/os.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="carousel-item ">
+        <div class="d-flex justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/1.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/python.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/mongo.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/c.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/excell.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="carousel-item ">
+        <div class="d-flex justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/css.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/sql.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/c++.png" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2  tooltip-container mx-2">
+            <div class="card  border-light rounded-0 ">
+              <img src="./imgs/network.jpeg" class="card-img-top img-fluid rounded-0 " alt="...">
+              <div class="card-body">
+                <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+                <p class="edit2">By Josenph Delgadillo</p>
+                <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-solid star  fa-star"></i>
+                  <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+                <div class="card-text"><small class="small">EGP</small><strong
+                    class="card-text  d-inline">4884.00</strong>
+                </div>
+              </div>
+
+            </div>
+            <div class="tooltip w-100 bg-light text-dark">
+              <div class="container text-start">
+                <div class="strong">
+                  <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+                </div>
+
+                <span class="update">
+                  <span class="bestseller">Best Seller</span>
+
+                  Updated July 2023
+                </span>
+
+                <div>
+                  <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+                </div>
+
+
+                <div>
+                  <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind,
+                    advanced patterns</p>
+                </div>
+
+                <ul>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Master Machine Learning on Python & R
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+
+                    Have a great intuition of many Machine Learning models
+
+                  </li>
+
+                  <li>
+
+                    <i class="fa-solid fa-check pe-2"></i>
+                    Make accurate predictions
+
+
+                  </li>
+
+                </ul>
+
+
+
+                <div>
+                  <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon  bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 tooltip-container mx-2">
+    <div class="card  border-light rounded-0 ">
+      <img src="./imgs/php.png" class="card-img-top img-fluid rounded-0 " alt="...">
+      <div class="card-body">
+        <p class="edit1"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></p>
+        <p class="edit2">By Josenph Delgadillo</p>
+        <span class="edit2"> <span class="star ">4.1<i class="fa-solid  fa-star"></i></span>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-solid star  fa-star"></i>
+          <i class="fa-regular star  fa-star-half-stroke"></i>(4.701)</span>
+        <div class="card-text"><small class="small">EGP</small><strong class="card-text  d-inline">4884.00</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- </div> -->
+
+
+
     <div class="tooltip w-50 bg-light text-dark">
       <div class="container text-start">
-          <div class="strong">
-            <strong>The Ultimate React Course 2023: React, Redux & More</strong>
-          </div>
+        <div class="strong">
+          <strong>The Ultimate React Course 2023: React, Redux & More</strong>
+        </div>
 
-    <span class="update">
-      <span class="bestseller">Best Seller</span>
+        <span class="update">
+          <span class="bestseller">Best Seller</span>
 
-      Updated July 2023
-    </span>
+          Updated July 2023
+        </span>
 
-          <div>
-            <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
-          </div>
-
-          
         <div>
-         <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns</p>
+          <span class="conttoop">67 total . hoursAll . LevelsSubtitles</span>
+        </div>
+
+
+        <div>
+          <p> Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced
+            patterns</p>
         </div>
 
         <ul>
 
           <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-              Master Machine Learning on Python & R
+
+            <i class="fa-solid fa-check pe-2"></i>
+            Master Machine Learning on Python & R
           </li>
 
           <li>
-          
-              <i class="fa-solid fa-check pe-2"></i>
-  
-                Have a great intuition of many Machine Learning models
-             
+
+            <i class="fa-solid fa-check pe-2"></i>
+
+            Have a great intuition of many Machine Learning models
+
           </li>
 
           <li>
-            
-              <i class="fa-solid fa-check pe-2"></i>
-                Make accurate predictions
-            
+
+            <i class="fa-solid fa-check pe-2"></i>
+            Make accurate predictions
+
 
           </li>
 
         </ul>
-        
 
 
-      <div>
-      <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
-         Add To Cart
-      </button>
-    </div>
-    </div>
 
-  </div>
+        <div>
+          <button type="button" class="btn checkout btn-lg btn-block text-light border-5">
+            Add To Cart
+          </button>
+        </div>
       </div>
 
+    </div>
+  </div>
 
 
 
-      
 
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
 
 </body>
 

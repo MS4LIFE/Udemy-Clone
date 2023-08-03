@@ -1,0 +1,44 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+
+.Udemy-profile:hover {
+    color: black !important;
+}
+
+.Udemy-profile:focus {
+    color: black !important;
+}
+
+.Profile-Picture:hover {
+    color: black !important;
+}
+
+.Profile-Picture:focus {
+    color: black !important;
+}
+
+.Privacy-Settings:hover {
+    color: black !important;
+}
+
+.Privacy-Settings:focus {
+    color: black !important;
+}
+
+.tab-content {
+    width: 30rem;
+}
+
+.dark-background {
+    background-color: white;
+}
+
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    background-color: black;
+
+}

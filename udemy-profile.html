@@ -8,11 +8,11 @@
     <link rel="icon" type="image/x-icon" href="./favIcon.png">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="./css/profile-picture.css">
-
+    <link rel="stylesheet" href="./css/udemy-profile.css">
 </head>
 
 <body>
+
     <!-- Header -->
     <div class="container ">
         <h3 class="fw-bold fs-2 mt-5 pt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; ">Profile &
@@ -22,7 +22,7 @@
 
     <!-- Tabs -->
     <div class="container d-flex">
-        <div class="container col-6 ">
+        <div class="container col-6">
             <div class="row ">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -34,35 +34,71 @@
                             <a class="Profile-Picture nav-link  text-secondary fw-bolder border-0"
                                 href="./profile-picture.html">Profile
                                 Picture</a>
-                            <a class=" Privacy-Settings nav-link  text-secondary fw-bolder border-0"
+                            <a class="Privacy-Settings nav-link  text-secondary fw-bolder border-0"
                                 href="./privacy-settings.html">Privacy
                                 Settings</a>
                         </div>
                         <!-- LINE -->
-                        <div class="row ">
+                        <div class="row">
                             <hr class="container-fluid ms-4 text-dark ">
                         </div>
 
-                        <!-- Content -->
-                        <div style="width: 30rem;">
-                            <p class="h6 fw-bold ms-3">Image preview</p>
-                            <small class="h8 fw-lighter text-secondary mt-3 ms-3 ">Minimum 200x200 pixels, Maximum
-                                6000x6000
-                                pixels</small>
+                        <!--Tab 1 Left Content -->
+                        <div class="tab-content">
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputFirstName" class="mb-1"><small class="fw-bold">First
+                                        Name</small></label>
+                                <input type="text" class="form-control border-dark rounded-0 me-5"
+                                    id="exampleInputFirstName" placeholder="Name *">
+                            </div>
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputSecondName " class=" mb-1"><small class="fw-bold">Last
+                                        Name</small></label>
+                                <input type="text" class="form-control border-dark rounded-0 me-5"
+                                    id="exampleInputSecondName" placeholder="Name *">
+                            </div>
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputHeadline" class="mb-1"><small
+                                        class="fw-bold">Heading</small></label>
+                                <input type="text" class="form-control border-dark rounded-0 me-5"
+                                    id="exampleInputHeadline"
+                                    placeholder="Instructor at Udemy                                                                                60">
+                            </div>
+                            <div class=" form-group ms-3 mb-3">
+                                <label for="exampleInputBiography" class="mb-1"><small
+                                        class="fw-bold">Biography</small></label>
+                                <input type="text" class="pb-5 form-control border-dark rounded-0 me-5"
+                                    id="exampleInputBiography">
+                            </div>
+                            <p class="text-secondary ms-3 col-12" style="font-size: 0.65rem;">To help learners learn
+                                more about you,
+                                your
+                                bio should reflect
+                                your
+                                Credibility,
+                                Empathy, Passion, and Personality. Your
+                                biography should have at least 50 words, links and coupon codes are not
+                                permitted.
+                            </p>
 
-                            <div class="col-12 box mt-2 ms-3 d-flex justify-content-center">
-                                <img src="./imgs/profile/anonymous.png" alt="anonymous-logo">
+                            <div class="pe-3">
+                                <select class=" form-select ms-3 mb-3 border-dark rounded-0"
+                                    aria-label="Default select example">
+                                    <!-- <option disabled>Select</option> -->
+                                    <option value="1">English (US)</option>
+                                    <option value="2">Español (España)</option>
+                                    <option value="3">Français (France)</option>
+                                    <option value="4">Italiano</option>
+                                    <option value="5">Polski</option>
+                                    <option value="5">Deutsch</option>
+                                </select>
+                            </div>
+                            <div class="btn text-light ms-3 rounded-0 mb-3 pt-2 pb-2 pe-4 ps-4 fs-5 fw-bold"
+                                style="background-color: #1c1d1f;">
+                                Save
                             </div>
                         </div>
                     </li>
-                    <div class=" ms-3 col-12">
-                        <label for="formFile" class="form-label"></label>
-                        <input class="form-control rounded-0 border-dark" type="file" id="formFile">
-                    </div>
-                    <div class="btn text-light mt-4 ms-3 rounded-0 mb-3 pt-2 pb-2 pe-4 ps-4 fs-5 fw-bold"
-                        style="background-color: #1c1d1f;">
-                        Save
-                    </div>
                 </ul>
             </div>
         </div>
@@ -72,9 +108,106 @@
         <!--Tab 1 Content Right Column-->
         <div class="container col-6 ">
             <div class="row">
+                <ul class="nav nav-tabs ">
+                    <li class="nav-item mt-4">
+                        <div class="col-12 pt-4 mt-2 tab-content">
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputWebsite" class="mb-1"><small
+                                        class="fw-bold">Website</small></label>
+                                <input type="text" class="form-control border-dark rounded-0 me-5"
+                                    id="exampleInputWebsite" placeholder="Url" style="cursor:not-allowed;">
+                            </div>
+
+                            <!-- Twitter -->
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputTwitter " class=" mb-1"><small
+                                        class="fw-bold">Twitter</small></label>
+                                <div class="d-flex">
+                                    <span class="col-5">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5 bg-light"
+                                            id="exampleInputTwitter" placeholder="https://www.twitter.com" disabled>
+                                    </span>
+                                    <span class="col-7">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5"
+                                            id="exampleInputTwitter" placeholder="Username">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Facebook -->
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputFacebook " class=" mb-1"><small
+                                        class="fw-bold">Facebook</small></label>
+                                <div class="d-flex">
+                                    <span class="col-6">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5 bg-light"
+                                            id="exampleInputFacebook" placeholder="https://www.facebook.com" disabled>
+                                    </span>
+                                    <span class="col-6">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5"
+                                            id="exampleInputFacebook" placeholder="Username">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- LinkedIn -->
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputLinkedIn " class=" mb-1"><small
+                                        class="fw-bold">LinkedIn</small></label>
+                                <div class="d-flex">
+                                    <span class="col-5">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5 bg-light"
+                                            id="exampleInputLinkedIn" placeholder="https://www.linkedin.com" disabled>
+                                    </span>
+                                    <span class="col-7">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5"
+                                            id="exampleInputLinkedIn" placeholder="Username">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Youtube -->
+                            <div class="form-group ms-3 mb-3">
+                                <label for="exampleInputYoutube" class=" mb-1"><small
+                                        class="fw-bold">Youtube</small></label>
+                                <div class="d-flex">
+                                    <span class="col-5">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5 bg-light"
+                                            id="exampleInputYoutube" placeholder="https://www.youtube.com" disabled>
+                                    </span>
+                                    <span class="col-7">
+                                        <input type="text" class="form-control border-dark rounded-0 me-5"
+                                            id="exampleInputYoutube" placeholder="Username">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- <div class="col-4 form-group ms-3 mb-3">
+                                <label class="mb-1">To help learners learn more about you,
+                                    <br> your bio should reflect your
+                                    Credibility,
+                                    <br> Empathy, Passion, and Personality.
+                                    <br> Your
+                                    biography should have at least 50 words,
+                                    <br> links and coupon codes are not
+                                    permitted.</label>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showTabContent(2)">Link</a>
+                        <div id="tabContent2" class="form-group mb-3" style="display: none;">
+                            <input type="email" class="form-control" id="exampleInputAnotherEmail"
+                                aria-describedby="emailHelp" placeholder="Work email *">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
             </div>
         </div>
     </div>
+
+
+
 
     <footer class="mt-5 p-4 footer">
 
@@ -228,10 +361,7 @@
                 Inc.</p>
         </div>
 
-
     </footer>
-
-
     <script>
         document.addEventListener('DOMContentLoaded', function (event) {
             event.preventDefault();
@@ -239,6 +369,18 @@
             // This will run after the DOM content has loaded
         });
     </script>
+    <!-- <script>
+        function showTabContent(tabIndex) {
+            const allTabContents = document.querySelectorAll('.form-group.mb-3');
+            allTabContents.forEach((content, index) => {
+                if (index === tabIndex) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        }
+    </script> -->
 </body>
 
 </html>

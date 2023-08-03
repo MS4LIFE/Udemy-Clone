@@ -8,11 +8,13 @@
     <link rel="icon" type="image/x-icon" href="./favIcon.png">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="./css/profile-picture.css">
+    <link rel="stylesheet" href="./css/privacy-settings.css">
 
 </head>
 
 <body>
+
+
     <!-- Header -->
     <div class="container ">
         <h3 class="fw-bold fs-2 mt-5 pt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; ">Profile &
@@ -20,12 +22,15 @@
         </h3>
     </div>
 
+
     <!-- Tabs -->
     <div class="container d-flex">
-        <div class="container col-6 ">
+        <div class="container col-6">
             <div class="row ">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
+                        <!-- Tabs -->
+
                         <div class="d-flex">
                             <a class="Udemy-profile nav-link active text-secondary fw-bolder border-0"
                                 aria-current="page" href="./udemy-profile.html">Udemy
@@ -34,35 +39,37 @@
                             <a class="Profile-Picture nav-link  text-secondary fw-bolder border-0"
                                 href="./profile-picture.html">Profile
                                 Picture</a>
-                            <a class=" Privacy-Settings nav-link  text-secondary fw-bolder border-0"
+                            <a class="Privacy-Settings nav-link  text-secondary fw-bolder border-0"
                                 href="./privacy-settings.html">Privacy
                                 Settings</a>
                         </div>
                         <!-- LINE -->
-                        <div class="row ">
+                        <div class="row">
                             <hr class="container-fluid ms-4 text-dark ">
                         </div>
 
-                        <!-- Content -->
-                        <div style="width: 30rem;">
-                            <p class="h6 fw-bold ms-3">Image preview</p>
-                            <small class="h8 fw-lighter text-secondary mt-3 ms-3 ">Minimum 200x200 pixels, Maximum
-                                6000x6000
-                                pixels</small>
 
-                            <div class="col-12 box mt-2 ms-3 d-flex justify-content-center">
-                                <img src="./imgs/profile/anonymous.png" alt="anonymous-logo">
+                        <div class="container tab-content ">
+                            <div class="form-check mt-2 ps-3">
+                                <input class="form-check-input border-dark bg-dark rounded-0 dark-background"
+                                    type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Show your profile to logged-in users
+                                </label>
+                            </div>
+                            <div class="form-check ps-3">
+                                <input class="form-check-input border-dark bg-dark rounded-0" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Show courses you're taking on your profile page
+                                </label>
                             </div>
                         </div>
+                        <div class="btn text-light mt-4 ms-3 rounded-0 mb-3 pt-2 pb-2 pe-4 ps-4 fs-5 fw-bold"
+                            style="background-color: #1c1d1f;">
+                            Save
+                        </div>
                     </li>
-                    <div class=" ms-3 col-12">
-                        <label for="formFile" class="form-label"></label>
-                        <input class="form-control rounded-0 border-dark" type="file" id="formFile">
-                    </div>
-                    <div class="btn text-light mt-4 ms-3 rounded-0 mb-3 pt-2 pb-2 pe-4 ps-4 fs-5 fw-bold"
-                        style="background-color: #1c1d1f;">
-                        Save
-                    </div>
                 </ul>
             </div>
         </div>
@@ -75,6 +82,7 @@
             </div>
         </div>
     </div>
+
 
     <footer class="mt-5 p-4 footer">
 
@@ -228,11 +236,12 @@
                 Inc.</p>
         </div>
 
-
     </footer>
 
 
+
     <script>
+        // Prevent Reloading On Load
         document.addEventListener('DOMContentLoaded', function (event) {
             event.preventDefault();
             // Your custom JavaScript code for the page load goes here

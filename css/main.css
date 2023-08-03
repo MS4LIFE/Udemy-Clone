@@ -285,6 +285,25 @@ color: rgb(104, 53, 153);
 
 }
 
+.bestseller {
+    color: rgb(11, 78, 25);
+    background: #ebe293;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .update {
+    font-size: small;
+    color: rgb(53, 124, 53);
+    font-weight: 500;
+  }
+
+
+
+
+
 /* Small HomaPage Nav */
 #responsiveNav {
 

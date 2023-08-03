@@ -1,0 +1,21 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+
+
+
+.box {
+    border: 1px solid #1c1d1f;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    height: 15rem;
+    width: 34rem;
+}
+
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    background-color: black;
+}

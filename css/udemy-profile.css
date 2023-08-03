@@ -1,3 +1,10 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+
+
+
 .tab-content {
     width: 30rem;
 }
@@ -14,4 +21,12 @@
     .tab-content {
         width: 100%;
     }
+}
+
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    background-color: black;
+
 }

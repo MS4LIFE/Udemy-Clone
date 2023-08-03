@@ -3,7 +3,29 @@
     list-style-type: none;
 }
 
+.Udemy-profile:hover {
+    color: black !important;
+}
 
+.Udemy-profile:focus {
+    color: black !important;
+}
+
+.Profile-Picture:hover {
+    color: black !important;
+}
+
+.Profile-Picture:focus {
+    color: black !important;
+}
+
+.Privacy-Settings:hover {
+    color: black !important;
+}
+
+.Privacy-Settings:focus {
+    color: black !important;
+}
 
 .box {
     border: 1px solid #1c1d1f;
